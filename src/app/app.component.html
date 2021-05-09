@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>UI-Switch Labels and Changes</h1>
+
+  <ui-switch
+    [(ngModel)]="foo"
+    checkedLabel="true"
+    uncheckedLabel="false"
+    checkedTextColor="#fff"
+    (change)="changeCount($event)">
+  </ui-switch>
+
+  <hr/>
+
+  <p>Foo?: {{foo}}</p>
+
+  <p>Change Count: {{count}}</p>
+</div>
